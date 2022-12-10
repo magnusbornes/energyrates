@@ -1,7 +1,7 @@
 # Energy Rates
 > :warning: **Disclaimer:**\
 NordPool's terms of service states the following:\
-> *"Nord Pool does not permit automatic extraction of data or other usage that reduces the performance of the website.\
+> *"Nord Pool does not permit automatic extraction of data or other usage that reduces the performance of the website.
 Any such extraction or usage will lead to the user being blocked from the website without further notice."*\
 > Read the Terms and Conditions here: https://www.nordpoolgroup.com/en/About-us/Terms-and-conditions-for-use/
    
