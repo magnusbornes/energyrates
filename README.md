@@ -1,8 +1,8 @@
 # Energy Rates
-Get energy rates hourly using NordPool's "website API" using PowerShell
+Get energy rates hourly using NordPool's "website API" using PowerShell\
 Please read the DISCLAIMER below.
 
-No additional modules required.
+No additional modules required.\
 The script only uses Invoke-WebRequest, and built in functionality.
 
     .SYNOPSIS
