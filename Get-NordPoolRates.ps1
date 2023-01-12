@@ -101,14 +101,11 @@
 [CmdletBinding()]
 param (
     [Parameter(Mandatory)][datetime]$Date,
-    [Parameter(Mandatory)][string]$Currency,    # To get rates from areas AT, BE, DE-LU, FR and NL, "EUR" must be used...
+    [Parameter(Mandatory)][ValidateSet("EUR","DKK","SEK","NOK")][string]$Currency,    # To get rates from areas AT, BE, DE-LU, FR and NL, "EUR" must be used...
     [Parameter()][switch]$IncludeStats,         # Output will include values for Max, Min, Peak (08:00-20:00), Offpeak 1 (00-08) and Offpeak 2 (20-00).
     [Parameter()][switch]$IncludeStatsOnly,     # Include only the values mentioned above.
     [Parameter()][switch]$kWh                   # Convert MWh til kWh.
 )
-
-# Validate Currency input.
-if ("EUR DKK SEK NOK" -notmatch $Currency) {Write-Error "Unknown Currency ""$Currency"". Allowed currencies: EUR, DKK, NOK and SEK"; Break}
 
 # Define defaults.
 $MarketDataPage = 10 # Default page size for the "All"-tab on the NordPool Market data website is 10 as of 2022-12-09.
